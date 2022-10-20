@@ -1,0 +1,909 @@
+@import "reset.css";
+/* =================шрифти===================== */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+@font-face {
+	font-family: "Inter";
+	src: url("../fonts/Inter/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Inter";
+	src: url("../fonts/Inter/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff");
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Inter";
+	src: url("../fonts/Inter/Inter-Black.woff2") format("woff2"), url("../fonts/Inter-Black.woff") format("woff");
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}
+body{font-family: "Lato";
+	font-style: normal;
+	font-size: 18px;
+}
+.wrapper{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+	
+}
+picture{
+	width: 100%;
+}
+.page {
+	padding-top: 20px;
+}
+.transform {
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: rgba(128, 128, 128, 0.658);
+}
+/* ================================Стилі translate============================ */
+.translate {
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 400px;
+}
+.translate__famous {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 50px;
+	left: 250px;
+}
+.translate__famous:hover{
+	z-index: 10;
+}
+.translate__picture:hover img{
+	transform: translate(20px,-20px);
+	transition: all 0.5s ease 0s;
+}
+.translate__happy {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	left: 75px;
+}
+.translate__happy:hover {
+	z-index: 10;
+}
+.translate__sad {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	left: 450px;
+}
+.translate__sad:hover {
+	z-index: 10;
+}
+.translate__start {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 170px;
+	left: 250px;
+}
+.translate__start:hover {
+	z-index: 10;
+}
+/* ================================Стилі scale============================ */
+.scale {
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 400px;
+}
+.scale__famous {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 50px;
+	left: 250px;
+}
+.scale__famous:active{
+	z-index: 10;
+}
+.scale__picture:active img{
+	transform: scale(1.5);
+	transition: all 0.9s ease 0s;
+}
+.scale__happy {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	left: 75px;
+}
+.scale__happy:active {
+	z-index: 10;
+}
+.scale__sad {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	left: 450px;
+}
+.scale__sad:active {
+	z-index: 10;
+}
+.scale__start {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 170px;
+	left: 250px;
+}
+.scale__start:active {
+	z-index: 10;
+}
+ /* ================================Стилі rotate============================ */
+
+.rotate {
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 400px;
+}
+
+.rotate__famous {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 50px;
+	left: 250px;
+}
+
+.rotate__famous:active {
+	z-index: 10;
+}
+
+.rotate__picture:active img {
+	transform: rotate(360deg);
+	transition: all 0.9s ease 0s;
+}
+
+.rotate__happy {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	left: 75px;
+}
+
+.rotate__happy:active {
+	z-index: 10;
+}
+
+.rotate__sad {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	left: 450px;
+}
+
+.rotate__sad:active {
+	z-index: 10;
+}
+
+.rotate__start {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 170px;
+	left: 250px;
+}
+
+.rotate__start:active {
+	z-index: 10;
+}
+/* ================================Стилі skew============================ */
+.skew {
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 400px;
+}
+
+.skew__famous {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 50px;
+	left: 250px;
+}
+
+.skew__famous:hover {
+	z-index: 10;
+}
+
+.skew__picture:hover img {
+	transform: skew(-30deg);
+	transition: all 0.9s ease 0s;
+}
+
+.skew__happy {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	left: 75px;
+}
+
+.skew__happy:hover {
+	z-index: 10;
+}
+
+.skew__sad {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	left: 450px;
+}
+
+.skew__sad:hover {
+	z-index: 10;
+}
+
+.skew__start {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 170px;
+	left: 250px;
+}
+
+.skew__start:hover {
+	z-index: 10;
+}
+/* ================================Стилі many============================ */
+.many {
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 400px;
+}
+
+.many__famous {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 50px;
+	left: 250px;
+}
+
+.many__famous:hover {
+	z-index: 10;
+}
+
+.many__picture:hover img {
+	transform: translate(20px, -20px) scale(1.5) rotate(360deg) skew(-30deg);
+	transition: all 0.9s ease 0s;
+}
+
+.many__happy {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	left: 75px;
+}
+
+.many__happy:hover {
+	z-index: 10;
+}
+
+.many__sad {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	left: 450px;
+}
+
+.many__sad:hover {
+	z-index: 10;
+}
+
+.many__start {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 170px;
+	left: 250px;
+}
+
+.many__start:hover {
+	z-index: 10;
+}
+/* ================================Стилі t-origin============================ */
+.t-origin {
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 400px;
+}
+
+.t-origin__famous {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 50px;
+	left: 250px;
+}
+
+.t-origin__famous:active {
+	z-index: 10;
+}
+
+.t-origin__picture:active img {
+	transform-origin: 90px 90px;
+	transform: translate(15%,15%) rotate(45deg);
+	transition: all 0.9s ease 0s;
+}
+
+.t-origin__happy {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	left: 75px;
+}
+
+.t-origin__happy:active {
+	z-index: 10;
+}
+
+.t-origin__sad {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	left: 450px;
+}
+
+.t-origin__sad:active {
+	z-index: 10;
+}
+
+.t-origin__start {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 170px;
+	left: 250px;
+}
+
+.t-origin__start:active {
+	z-index: 10;
+}
+/* ================================Стилі perspective============================ */
+.perspective {
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 400px;
+}
+
+.perspective__famous {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 50px;
+	left: 250px;
+	perspective: 300px;
+}
+
+.perspective__famous:active {
+	z-index: 10;
+}
+
+.perspective__picture:active img {
+	transform: rotateX(60deg);
+	transition: all 0.9s ease 0s;
+}
+
+.perspective__happy {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	left: 75px;
+	perspective: 300px;
+}
+
+.perspective__happy:active {
+	z-index: 10;
+}
+
+.perspective__sad {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	left: 450px;
+	perspective: 300px;
+}
+
+.perspective__sad:active {
+	z-index: 10;
+}
+
+.perspective__start {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 170px;
+	left: 250px;
+	perspective: 300px;
+}
+
+.perspective__start:active {
+	z-index: 10;
+}
+/* ================================Стилі translate3d============================ */
+.translate3d {
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 400px;
+}
+
+.translate3d__famous {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 50px;
+	left: 250px;
+	perspective: 300px;
+}
+
+.translate3d__famous:hover {
+	z-index: 10;
+}
+
+.translate3d__picture:hover img {
+	transform: translate3d(30px,30px,30px);
+	transition: all 0.9s ease 0s;
+}
+
+.translate3d__happy {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	left: 75px;
+	perspective: 300px;
+}
+
+.translate3d__happy:hover {
+	z-index: 10;
+}
+
+.translate3d__sad {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	left: 450px;
+	perspective: 300px;
+}
+
+.translate3d__sad:hover {
+	z-index: 10;
+}
+
+.translate3d__start {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 170px;
+	left: 250px;
+	perspective: 300px;
+}
+
+.translate3d__start:hover {
+	z-index: 10;
+}
+/* ================================Стилі scale3d============================ */
+.scale3d {
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 400px;
+}
+
+.scale3d__famous {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 50px;
+	left: 250px;
+	perspective: 300px;
+}
+
+.scale3d__famous:hover {
+	z-index: 10;
+}
+
+.scale3d__picture:hover img {
+	transform: scale3d(1.2,1.2,1.2);
+	transition: all 0.9s ease 0s;
+}
+
+.scale3d__happy {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	left: 75px;
+	perspective: 300px;
+}
+
+.scale3d__happy:hover {
+	z-index: 10;
+}
+
+.scale3d__sad {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	left: 450px;
+	perspective: 300px;
+}
+
+.scale3d__sad:hover {
+	z-index: 10;
+}
+
+.scale3d__start {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 170px;
+	left: 250px;
+	perspective: 300px;
+}
+
+.scale3d__start:hover {
+	z-index: 10;
+}
+/* ================================Стилі rotate3d============================ */
+.rotate3d {
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 400px;
+}
+
+.rotate3d__famous {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 50px;
+	left: 250px;
+	perspective: 300px;
+}
+
+.rotate3d__famous:hover {
+	z-index: 10;
+}
+
+.rotate3d__picture:hover img {
+	transform: rotate3d(1,1,1, -30deg);
+	transition: all 0.9s ease 0s;
+}
+
+.rotate3d__happy {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	left: 75px;
+	perspective: 300px;
+}
+
+.rotate3d__happy:hover {
+	z-index: 10;
+}
+
+.rotate3d__sad {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	left: 450px;
+	perspective: 300px;
+}
+
+.rotate3d__sad:hover {
+	z-index: 10;
+}
+
+.rotate3d__start {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 170px;
+	left: 250px;
+	perspective: 300px;
+}
+
+.rotate3d__start:hover {
+	z-index: 10;
+}
+/* ================================Стилі many3d============================ */
+
+.many3d {
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 400px;
+}
+
+.many3d__famous {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 50px;
+	left: 250px;
+	perspective: 300px;
+}
+
+.many3d__famous:active {
+	z-index: 10;
+}
+
+.many3d__picture:active img {
+	transform: translate3d(30px, 30px, 30px) scale3d(1.2, 1.2, 1.2) rotate3d(1, 1, 1, -30deg);
+	transition: all 0.9s ease 0s;
+}
+
+.many3d__happy {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	left: 75px;
+	perspective: 300px;
+}
+
+.many3d__happy:active {
+	z-index: 10;
+}
+
+.many3d__sad {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	left: 450px;
+	perspective: 300px;
+}
+
+.many3d__sad:active {
+	z-index: 10;
+}
+
+.many3d__start {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 170px;
+	left: 250px;
+	perspective: 300px;
+}
+
+.many3d__start:active {
+	z-index: 10;
+}
+/* ================================Стилі t-style============================ */
+.t-style {
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 400px;
+}
+
+.t-style__famous {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 50px;
+	left: 250px;
+	perspective: 300px;
+	transform-style: preserve-3d;
+}
+
+.t-style__famous:active {
+	z-index: 10;
+}
+
+.t-style__picture:active img {
+	transform: rotateY(45deg);
+	transition: all 0.9s ease 0s;
+}
+
+.t-style__happy {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	left: 75px;
+	perspective: 300px;
+}
+
+.t-style__happy:active {
+	z-index: 10;
+}
+
+.t-style__sad {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 100px;
+	left: 450px;
+	perspective: 300px;
+}
+
+.t-style__sad:active {
+	z-index: 10;
+}
+
+.t-style__start {
+	width: 300px;
+	height: 199px;
+	background-color: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	top: 170px;
+	left: 250px;
+	perspective: 300px;
+}
+
+.t-style__start:active {
+	z-index: 10;
+}
+/* ================================Стилі backface-visibility============================ */
+.backface-visibility {
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 400px;
+}
+.backface-visibility__famous {
+	width: 300px;
+	height: 199px;
+	background-color: red;
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 120px 120px;
+	position: absolute;
+	top: 50px;
+	left: 250px;
+	perspective: 300px;
+}
+
+.backface-visibility__famous:hover {
+	z-index: 10;
+}
+
+.backface-visibility__picture:hover img {
+	transform: rotateX(180deg);
+	backface-visibility: hidden;
+	transition: all 0.9s ease 0s;
+}
+
+.backface-visibility__happy {
+	width: 300px;
+	height: 199px;
+	background-color: red;
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 120px 120px;
+	position: absolute;
+	top: 100px;
+	left: 75px;
+	perspective: 300px;
+}
+
+.backface-visibility__happy:hover {
+	z-index: 10;
+}
+
+.backface-visibility__sad {
+	width: 300px;
+	height: 199px;
+	background-color: red;
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 120px 120px;
+	position: absolute;
+	top: 100px;
+	left: 450px;
+	perspective: 300px;
+}
+
+.backface-visibility__sad:hover {
+	z-index: 10;
+}
+
+.backface-visibility__start {
+	width: 300px;
+	height: 199px;
+	background-color: red;
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 120px 120px;
+	position: absolute;
+	top: 170px;
+	left: 250px;
+	perspective: 300px;
+}
+
+.backface-visibility__start:hover {
+	z-index: 10;
+}
